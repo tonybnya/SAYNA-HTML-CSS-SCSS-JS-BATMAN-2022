@@ -9,4 +9,13 @@
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+@font-face {
+  font-family: "rajdhani";
+  src: url(../../fonts/Rajdhani-Regular.ttf);
+}
+@font-face {
+  font-family: "space-grotesk";
+  src: url(../../fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }/*# sourceMappingURL=main.css.map */
