@@ -1,14 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;500;700&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;700&family=Roboto+Condensed:wght@400;700&family=Roboto+Slab:wght@400;500;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@font-face {
+  font-family: "rajdhani";
+  src: url(../../fonts/Rajdhani-Regular.ttf);
+}
+@font-face {
+  font-family: "space-grotesk";
+  src: url(../../fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
+#hero .content .title {
+  font-family: "rajdhani";
+  font-weight: 500;
+  font-size: 36px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  background: #0D0E09;
+  color: #FFFFFF;
+  font-family: "space-grotesk", sans-serif;
+  font-weight: 300;
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.btn {
+  font-family: "rajdhani";
+  font-size: 20px;
+  color: white;
+  padding: 10px 50px;
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(70deg, rgba(237, 222, 191, 0.4) 40%, rgba(137, 0, 8, 0.4) 60%);
+  box-shadow: #0D0E09 5px 5px 60px;
+  margin-left: 20px;
+}
+.btn:hover {
+  background: linear-gradient(80deg, rgb(237, 222, 191) 40%, rgb(137, 0, 8) 60%);
+  text-shadow: 2px 2px 3px #0D0E09;
+}
+
+.logo:hover,
+.hoveryellow:hover {
+  filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg) brightness(109%) contrast(112%);
 }
 
 @font-face {
@@ -19,6 +68,12 @@
   font-family: "space-grotesk";
   src: url(../../fonts/SpaceGrotesk-VariableFont_wght.ttf);
 }
+#hero .content .title {
+  font-family: "rajdhani";
+  font-weight: 500;
+  font-size: 36px;
+}
+
 .up-bar {
   position: absolute;
   border-top: 2px solid rgba(188, 187, 189, 0.1647058824);
@@ -55,4 +110,79 @@
 }
 .scroll img {
   margin-top: 20px;
+}
+
+nav {
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+  color: #FFFFFF;
+}
+nav ul a:hover {
+  color: #FFFF00;
+}
+nav .menu-mobile {
+  opacity: 0;
+}
+
+#hero {
+  background-position: top-center;
+  background-image: url(../img/illustrations/Bathome1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(130vh - 30px);
+}
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px) scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-1000px) scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+#hero .content {
+  -webkit-animation: fadeInRight 1500ms ease-in-out;
+          animation: fadeInRight 1500ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 140px;
+}
+#hero .content .title {
+  margin-bottom: 40px;
+}
+#hero .arrow {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  margin-top: 20rem;
 }/*# sourceMappingURL=main.css.map */
