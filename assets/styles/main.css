@@ -185,4 +185,28 @@ nav .menu-mobile {
   margin: 0 auto;
   width: 80px;
   margin-top: 20rem;
+}
+
+footer {
+  margin-top: 200px;
+}
+footer .footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+}
+footer .footer-text img {
+  margin-right: 10px;
+}
+footer .footer-social {
+  text-align: center;
+  margin-top: 40px;
+}
+footer .footer-social .social-icon {
+  padding: 15px;
+}
+footer .footer-social .social-icon .footer-logo {
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
